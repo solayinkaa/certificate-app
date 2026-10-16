@@ -81,7 +81,7 @@ st.set_page_config(
 # environment variable or st.secrets["PRO_LICENSE_KEYS"] (a TOML list or a
 # comma-separated string, e.g. in Streamlit Community Cloud's Secrets box).
 # Those are merged with this list at runtime.
-VALID_KEYS = ["PRO-2026-C2S", "ADMIN-UNLOCK"]
+VALID_KEYS = []  # Real keys live in Streamlit Secrets (PRO_LICENSE_KEYS)
 
 FREE_ROW_LIMIT = 50                     # Max recipients on the free tier
 REQUIRED_COLUMNS = ["Name", "CertNo", "Email"]
