@@ -1,0 +1,15 @@
+# Secrets: configure these in Streamlit Community Cloud, never commit them
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

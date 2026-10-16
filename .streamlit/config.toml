@@ -1,0 +1,14 @@
+# Streamlit server settings for running inside a cross-site iframe
+# (Streamlit Community Cloud app embedded on c2snet.org).
+[server]
+headless = true
+# Browsers block the XSRF cookie inside a third-party iframe, which makes
+# every file upload fail with "AxiosError: 403". Disabling XSRF protection
+# (and CORS, which must be off when XSRF is off) fixes uploads in the iframe.
+enableXsrfProtection = false
+enableCORS = false
+# Upload size limit in MB for templates and spreadsheets.
+maxUploadSize = 50
+
+[browser]
+gatherUsageStats = false
